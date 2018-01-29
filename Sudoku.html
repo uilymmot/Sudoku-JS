@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="{{ app()->getLocale() }}">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+	<script src="Sudoku.js"></script>
+</head>
+
+<body>
+    <input type="text" id="input-sudoku-string" title="input-sud-string">
+    <input type="text" id="solved-sudoku-string" title="solved-sud-string">
+	
+	<button onclick="solveTheSudoku()" id="butt">Solve the sudoku!</button>
+	
+	<p> Info: Input the sudoku as an 81 character string with blank values denoted by a '.' dot character. </p>
+</body>
+
+</html>
